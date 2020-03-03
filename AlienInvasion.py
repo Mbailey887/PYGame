@@ -18,7 +18,7 @@ class AlienInvasion:
 
         pygame.display.set_caption("Alien Invasion")
 
-#How the game is controlled
+#How the game is controlled.
     def run_game(self):
         """Start the main loop for the game."""
         while True:
