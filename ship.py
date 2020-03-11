@@ -1,10 +1,12 @@
 import pygame
+from pygame.sprite import Sprite
 
-class Ship:
+class Ship(Sprite):
     """A class to manage the ship."""
 
     def __init__(self, ai_game):
         """Initialize the ship and set its starting position."""
+        super().__init__()
         self.screen = ai_game.screen #assign the screen to an attribute of Ship, so we can access it easily in all methods in this class
         self.settings = ai_game.settings
         self.screen_rect = ai_game.screen.get_rect() #acess the screen's rect attribute. allows us to place the ship in the correct location on the screen  
